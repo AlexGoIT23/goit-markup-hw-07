@@ -130,12 +130,14 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  /* width: 100%;
+  height: 100%; */
   background-color: #a79e9e;
   padding-top: 80px;
   padding-left: 40px;
-  padding-right: 0;
+  padding-right: 40px;
   padding-bottom: 40px;
 }
 
