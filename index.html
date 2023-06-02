@@ -2,82 +2,147 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-
     <header class="top-header">
         <div class="container nav-container">
             <nav class="page-nav">
-                <a href="./index.html" class="logo link">Web<span class="nav-span">Studio</span> </a>
+                <a href="./index.html" class="logo link">Web<span class="nav-span">Studio</span>
+                </a>
                 <ul class="list list-nav">
-                    <li class="nav-item"><a href="./index.html" class="link nav-link studio-underline">Studio</a></li>
-                    <li class="nav-item"><a href="./portfolio.html" target="_blank" class="link nav-link">Portfolio</a>
+                    <li class="nav-item">
+                        <a href="./index.html" class="link nav-link studio-underline">Studio</a>
                     </li>
-                    <li class="nav-item"><a href="" class="link nav-link">Contacts</a></li>
+                    <li class="nav-item">
+                        <a href="./portfolio.html" target="_blank" class="link nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="link nav-link">Contacts</a>
+                    </li>
                 </ul>
             </nav>
 
-            <address class="no_italic">
+            <address class="header-adress-box">
                 <ul class="list list-contacts">
-                    <li><a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a>
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a>
                     </li>
-                    <li><a href="tel:+110001111111" class="link contacts">+11 (000) 111-11-11</a>
+                    <li>
+                        <a href="tel:+110001111111" class="link contacts">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
-            <button class="mobile-open-btn" type="button">
+            <button class="mobile-open-btn js-open-menu" type="button">
                 <svg class="mobile-open-btn-img" width="32" height="22">
                     <use href="./images/icons.svg#icon-burger-mobile"></use>
                 </svg>
             </button>
         </div>
-        <div class="mobile-menu">
-            <button type="button" class="modal-btn" data-modal-close>
-                <svg class="modal-icon" width="8" height="8">
-                    <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-            </button>
-            <!-- <nav class="page-nav"> -->
-            <ul class="list mobile-list-nav">
-                <li class="nav-item"><a href="./index.html" class="link nav-link">Studio</a>
-                </li>
-                <li class="nav-item"><a href="./portfolio.html" target="_blank" class="link nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item"><a href="" class="link nav-link">Contacts</a></li>
-            </ul>
-            <!-- </nav> -->
-            <ul class="list mobile-list-contacts">
-                <li><a href="tel:+110001111111" class="link contacts">+11 (000) 111-11-11</a>
-                </li>
-                <li><a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a>
-                </li>
-            </ul>
+
+        <!-- ========== modal mobile ============== -->
+        <div class="mobile-menu-container js-menu-container">
+            <div class="mobile-menu">
+                <button type="button" class="modal-btn js-close-menu">
+                    <svg class="modal-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="mobile-contacts-box">
+                    <!-- <nav class="page-nav"> -->
+                    <ul class="list mobile-list-nav">
+                        <li class="">
+                            <a href="./index.html" class="link nav-item nav-link">Studio</a>
+                        </li>
+                        <li class="">
+                            <a href="./portfolio.html" target="_blank" class="link nav-item nav-link">Portfolio</a>
+                        </li>
+                        <li class="">
+                            <a href="" class="link nav-item nav-link">Contacts</a>
+                        </li>
+                    </ul>
+                    <!-- </nav> -->
+                </div>
+                <div class="mobile-modal-sm-link">
+                    <ul class="list mobile-list-contacts">
+                        <li class="">
+                            <a href="tel:+110001111111" class="link mobile-modal-tel">+11 (000) 111-11-11</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="link mobile-modal-mail">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="list list-mobile-sm-link">
+                        <li class="no-used">
+                            <a href="" class="icon-link-footer">
+                                <svg width="24" height="24" class="footer-icon">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="no-used">
+                            <a href="" class="icon-link-footer">
+                                <svg width="24" height="24" class="footer-icon">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="no-used">
+                            <a href="" class="icon-link-footer">
+                                <svg width="24" height="24" class="footer-icon">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="no-used">
+                            <a href="" class="icon-link-footer">
+                                <svg width="24" height="24" class="footer-icon">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
     </header>
 
     <main>
+
+
         <!-- секція 1 -->
 
-        <!-- <section class="main-section">
+        <section class="main-section">
+            <!-- <picture>
+                <source
+                    srcset="../images/index-img/index-bg-desktop@1x.jpg x1, ../goit-markup-hw-07/images/index-img/index-bg-desktop@2x.jpg x2"
+                    media="(min-width: 1200px)" />
+                <source
+                    srcset="../images/index-img/index-bg-tablet@1x.jpg x1, ../goit-markup-hw-07/images/index-img/index-bg-tablet@2x.jpg x2"
+                    media="(min-width: 768px)" />
+                <source
+                    srcset="../images/index-img/index-bg-mobile@1x.jpg x1, ../goit-markup-hw-07/images/index-img/index-bg-mobile@2x.jpg x2"
+                    media="(min-width: 280px)" />
+                <img src="../images/index-img/index-bg-mobile@1x.jpg" alt="background image">
+            </picture> -->
             <div class="container main-bg">
                 <h1 class="main-title">Effective Solutions
                     for Your Business </h1>
                 <button type="button" class="main-btn" data-modal-open>Order Service</button>
             </div>
-        </section> -->
+        </section>
 
         <!-- секція 2  -->
         <!-- <section class="second-section">
@@ -362,7 +427,6 @@
                 </ul>
             </div>
         </section> -->
-
     </main>
 
     <!-- <footer class="footer-styles">
@@ -502,9 +566,8 @@
 
     </div> -->
 
-
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
-
 
 </html>
