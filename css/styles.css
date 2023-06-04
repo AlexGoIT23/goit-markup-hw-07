@@ -54,16 +54,16 @@ input {
 /* ________________________ header mobile _________________________ */
 
 .container {
-  width: 428px;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .container {
-    max-width: 767px;
+    max-width: 428px;
   }
 }
 
@@ -212,6 +212,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 328px;
   /* gap: 56px; */
 
   margin-top: 48px;
@@ -221,7 +222,7 @@ input {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 767px;
+    max-width: 767px;
     padding-left: 16px;
     padding-right: 16px;
     /* margin-right: auto;
@@ -354,7 +355,7 @@ input {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-top: 24px;
     padding-bottom: 24px;
   }
@@ -475,21 +476,23 @@ input {
 }
 /* ________________ mobile hero _________________ */
 
-.main-section {
-  background-color: #2e2f42;
-  padding-top: 112px;
-  padding-bottom: 112px;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/index-img/index-bg-mobile@1x.jpg);
-  background-size: cover;
-  max-width: 767px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 360px) {
+  .main-section {
+    background-color: #2e2f42;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/index-img/index-bg-mobile@1x.jpg);
+    background-size: cover;
+    max-width: 428px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -549,7 +552,11 @@ input {
 
 /* ___________________ hero tablet ____________________ */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
+  
+} */
+
+@media screen and (min-width: 767px) {
   .main-section {
     /* background-color: #2e2f42; */
     /* padding-top: 112px;
@@ -559,12 +566,12 @@ input {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/index-img/index-bg-tablet@1x.jpg);
-    /* background-size: cover;
-    max-width: 767px;
+    background-size: cover;
+    max-width: 768px;
     background-repeat: no-repeat;
     background-position: center;
     margin-left: auto;
-    margin-right: auto; */
+    margin-right: auto;
   }
 
   @media (min-device-pixel-ratio: 2),
