@@ -1240,6 +1240,7 @@ input {
 }
 
 /* ================= footer desktop ===================== */
+
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
@@ -1265,7 +1266,7 @@ input {
     min-width: 252px;
   }
 }
-/* ================Модальне вікно================ */
+/* ================Модальне вікно================== */
 .backdrop {
   position: fixed;
   width: 100%;
