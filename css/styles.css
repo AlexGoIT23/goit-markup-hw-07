@@ -105,12 +105,16 @@ input {
 }
 
 /* ____________________ mobile menu __________________ */
+
+.top-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .mobile-menu-container {
@@ -223,12 +227,14 @@ input {
     display: none;
   }
 
+  .top-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .nav-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 16px;
-    padding-bottom: 16px;
   }
 
   .page-nav {
@@ -327,13 +333,12 @@ input {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
 
   .top-header {
     border-bottom: 1px solid #e7e9fc;
-
+    padding-top: 24px;
+    padding-bottom: 24px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
@@ -342,8 +347,6 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
 
   .page-nav {
@@ -607,7 +610,7 @@ input {
   display: flex;
 }
 
-.title-portfolio {
+.features {
   line-height: 1.1;
   font-weight: 700;
   font-size: 36px;
@@ -676,6 +679,7 @@ input {
 
   .title-portfolio {
     font-size: 20px;
+    text-align: start;
   }
 
   .title-text {
@@ -823,6 +827,17 @@ input {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .title-portfolio-team {
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2e2f42;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
   .fourth-list {
     column-gap: 24px;
     padding: 0;
@@ -895,10 +910,12 @@ input {
 @media screen and (min-width: 768px) {
   .customers-list {
     column-gap: 24px;
+    justify-content: center;
   }
 
   .customers-box {
     width: calc((100% - 48px) / 3);
+    width: 168px;
   }
 }
 
@@ -1203,6 +1220,7 @@ input {
 
   .footer-logo-section {
     margin-right: 24px;
+    margin-left: 92px;
     min-width: 264px;
   }
 
@@ -1217,6 +1235,7 @@ input {
 
   .subscribe-box {
     min-width: 264px;
+    margin-left: 92px;
   }
 
   .form-box {
@@ -1240,7 +1259,6 @@ input {
 }
 
 /* ================= footer desktop ===================== */
-
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
@@ -1264,9 +1282,14 @@ input {
   .footer-logo-section {
     margin-right: 120px;
     min-width: 252px;
+    margin-left: 0;
+  }
+
+  .subscribe-box {
+    margin-left: 0;
   }
 }
-/* ================Модальне вікно================== */
+/* ================Модальне вікно================ */
 .backdrop {
   position: fixed;
   width: 100%;
