@@ -138,7 +138,7 @@ input {
   justify-content: space-between;
   width: 100vw;
   height: 100%;
-  background-color: #fff;
+  background-color: #f4f4fd;
   padding-top: 80px;
   padding-left: 40px;
   padding-right: 40px;
@@ -212,6 +212,14 @@ input {
   align-items: center;
   max-width: 328px;
   margin-top: 48px;
+}
+
+.portfolio-header-line {
+  border-bottom: 1px solid #e7e9fc;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /* _____________ header tablet ______________ */
@@ -936,14 +944,132 @@ input {
   }
 }
 
-/* ======================= img portfolio ======================= */
+/* ========================== PORTFOLIO ================================ */
 
+/* ======================= img portfolio mobile ======================= */
 .main-section-pf {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .img-portfolio {
+  width: 396px;
+}
+
+.img-pf-width {
+  width: 396px;
+}
+
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  /* column-gap: 24px; */
+}
+
+.img-title-pf {
+  padding: 32px 16px;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.link-block {
+  position: relative;
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-block:hover .overlay-text {
+  transform: translateY(0);
+}
+
+.link-block:focus .overlay-text {
+  transform: translateY(0);
+}
+
+.overlay-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.link-block:hover,
+.link-block:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.link-block:hover .overlay {
+  transform: translateY(0);
+}
+
+.link-block:focus .overlay {
+  transform: translateY(0);
+}
+
+/* ================= кнопки портфоліо mobile ============= */
+
+.btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 24px;
+  row-gap: 16px;
+  margin-bottom: 48px;
+}
+
+.btn {
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  list-style: none;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--hover-color);
+  color: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* ======================== img portfolio desktop =================== */
+/* .main-section-pf {
+  padding-top: 96px;
+  padding-bottom: 120px;
+} */
+
+/* .img-portfolio {
   width: calc((100% - 48px) / 3);
 }
 
@@ -952,7 +1078,7 @@ input {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-}
+} */
 
 .img-title-pf {
   padding: 32px 16px;
@@ -1014,12 +1140,12 @@ input {
 
 /* ================= кнопки портфоліо ============= */
 
-.btn-list {
+/* .btn-list {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
-}
+} */
 
 .btn {
   color: #4d5ae5;
